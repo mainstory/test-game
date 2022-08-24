@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: #333;
+  font-family: "Poppins";
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.test {
+  background-image: url("../../img/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+.test__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.test__scrollbar {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.test__main-body {
+  background-color: rgba(0, 0, 0, 0.281);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  height: 700px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.test__main-body::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+.test__main-body::-webkit-scrollbar-thumb {
+  background: rgba(1, 2, 3, 0.4);
+  border-radius: 10px;
+}
+.test__main-info {
+  display: flex;
+}
+.test__progress {
+  position: relative;
+  width: 800px;
+  height: 50px;
+  background-color: rgba(20, 22, 43, 0.3294117647);
+  border: 2px solid rgba(20, 22, 43, 0.3294117647);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.test__shadow {
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #205efb;
+}
+.test__width {
+  position: relative;
+  z-index: 50;
+  transition: max-width 3s ease 0s;
+  background-color: #3a6df0;
+  max-width: 0%;
+  height: 100%;
+}
+.test__progress-text {
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0px 0px 0px 15px;
+}
+.test__add {
+  background-color: #3a6df0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 100vmax;
+  margin: 15px 15px 15px 0px;
+}
+.test__currency {
+  padding: 15px 15px 15px 0px;
+}
+.test__rung {
+  margin: 0px 15px 0px 0px;
+}
+.test__rung img {
+  border-radius: 15px;
+}
+
+.history__body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0px 0px 15px 0px;
+  transition: all 0.3s ease 0s;
+}
+.history__first-block {
+  display: flex;
+  align-items: center;
+}
+.history__rung-img {
+  margin: 0px 15px 0px 0px;
+}
+.history__rung-img img {
+  border-radius: 15px;
+}
+.history__tool img {
+  border-radius: 15px;
+}
+.history__second-block {
+  display: flex;
+  align-items: center;
+}
+.history__btn {
+  background-color: #3a6df0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 100vmax;
+  margin: 0px 0px 15px 0px;
+}
+
+._hidden {
+  display: none;
+}
+
+._skip {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
+}
+
+.todo-list__body {
+  background-color: rgba(112, 112, 112, 0.385);
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 15px 0px;
+  cursor: pointer;
+  transition: background-color 0.5s ease 0s;
+}
+.todo-list__body:hover {
+  background-color: rgba(26, 26, 26, 0.385);
+}
+.todo-list__icon {
+  background-color: transparent;
+  overflow: hidden;
+  margin: 0px 15px 0px 0px;
+}
+.todo-list__icon img {
+  border-radius: 15px;
+}
+.todo-list__text {
+  width: 500px;
+}
+.todo-list__difficult {
+  margin: 0px 0px 0px auto;
+}
+.todo-list__cross {
+  margin: 0px 0px 0px auto;
+  background-color: transparent;
+  width: 15px;
+  opacity: 0.3;
+}
+.todo-list__cross img {
+  max-width: 100%;
+}
+.todo-list__btn {
+  background-color: #3a6df0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 100vmax;
+  margin: 0px 0px 15px 0px;
+}
+
+._hidden {
+  display: none;
+}
