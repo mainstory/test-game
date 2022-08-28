@@ -1,0 +1,93 @@
+.burger-icon {
+  width: 30px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0px 15px 0px 0px;
+}
+@media (min-width: 992px) {
+  .burger-icon {
+    display: none;
+  }
+}
+.burger-icon span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100vmax;
+  transition: transform 0.3s ease 0s;
+}
+.burger-icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100vmax;
+  transition: transform 0.3s ease 0s, top 0.3s ease 0s;
+}
+.burger-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100vmax;
+  transition: transform 0.3s ease 0s, bottom 0.3s ease 0s;
+}
+.burger-icon._active span {
+  transform: scale(0);
+}
+.burger-icon._active:before {
+  top: calc(50% - 2px);
+  transform: rotate(45deg);
+}
+.burger-icon._active:after {
+  bottom: calc(50% - 2px);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+  .burger-menu {
+    position: fixed;
+    z-index: 300;
+    overflow: auto;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: #1b2127;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+[data-burger-main-body] {
+  left: -100%;
+}
+[data-burger-main-body]._active {
+  left: 0;
+}
+
+.burger-cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  right: 30px;
+  z-index: 500;
+}
+@media (min-width: 992px) {
+  .burger-cross {
+    display: none;
+  }
+}
+.burger-cross img {
+  max-width: 100%;
+}
